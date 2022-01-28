@@ -15,6 +15,7 @@ app.use(helmet());
 
 const CONNECTION_STRING =
   "mongodb+srv://kakashi-orion:Jan!2022@sandbox.mhed2.mongodb.net/local_library?retryWrites=true";
+var mongoDB = process.env.MONGODB_URI || CONNECTION_STRING;
 
 //Set up mongoose connection
 var mongoose = require("mongoose");
